@@ -1,4 +1,4 @@
-package com.jet;
+package com.jet.runner.domain;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.google.gson.annotations.SerializedName;

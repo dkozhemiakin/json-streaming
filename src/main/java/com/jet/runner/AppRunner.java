@@ -1,4 +1,4 @@
-package com.jet;
+package com.jet.runner;
 
 import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.transfer.Download;
@@ -7,6 +7,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 import com.jet.config.properties.S3Properties;
+import com.jet.runner.domain.Holding;
+import com.jet.runner.domain.HoldingKey;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +21,8 @@ import java.io.OutputStreamWriter;
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.jet.StreamUtils.applyFileReader;
-import static com.jet.StreamUtils.applyFileWriter;
+import static com.jet.runner.StreamUtils.applyFileReader;
+import static com.jet.runner.StreamUtils.applyFileWriter;
 
 @Component
 @Slf4j

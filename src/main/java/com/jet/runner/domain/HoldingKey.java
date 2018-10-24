@@ -1,4 +1,4 @@
-package com.jet;
+package com.jet.runner.domain;
 
 import lombok.RequiredArgsConstructor;
 import lombok.Value;

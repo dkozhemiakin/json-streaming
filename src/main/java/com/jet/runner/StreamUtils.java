@@ -1,4 +1,4 @@
-package com.jet;
+package com.jet.runner;
 
 import com.google.gson.stream.JsonReader;
 import lombok.SneakyThrows;
